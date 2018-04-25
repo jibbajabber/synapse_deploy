@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 
-mkdir data && cd data
+mkdir data
+cd data
+
 python -m synapse.app.homeserver --server-name journeyman \
                                  --config-path homeserver.yaml \
                                  --generate-config \
